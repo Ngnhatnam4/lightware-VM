@@ -20,6 +20,10 @@ Lightware include so many feature
 
 ### How to install it?
   -well just wait for while
+
+  or how to use it in powershell?
+  -use the PowerShell to create and manage VMs
+  [.\launch-lightware.ps1]
 #### Contributing
   Contributions are welcome! Please follow these steps:
 
@@ -47,21 +51,18 @@ Lightware include so many feature
  
  Advanced VM templates and snapshots support
  
-  ##### Usage Examples
+##### Usage Examples
 Creating a New VM
 
-powershell
-.\launch-lightware.ps1 -CreateVM -Name "MyVM" -CPUCount 4 -MemoryGB 8 -DiskSizeGB 20
+[.\launch-lightware.ps1 -CreateVM -Name "MyVM" -CPUCount 4 -MemoryGB 8 -DiskSizeGB 20]
 
 Importing an Existing VM
 
-powershell
-.\launch-lightware.ps1 -ImportVM -Path "C:\VMs\MyImportedVM.vdi2x"
+[.\launch-lightware.ps1 -ImportVM -Path "C:\VMs\MyImportedVM.vdi2x"]
 
 Listing VMs
 
-powershell
-.\launch-lightware.ps1 -ListVMs
+[.\launch-lightware.ps1 -ListVMs]
  (Note: Detailed commands and options will be expanded as the project matures.)           
 ###### About Project License 
-- This project is licensed under the [Your Chosen License]. See the LICENSE file for details.
+- This project is licensed under the MIT License. See the LICENSE file for details.
