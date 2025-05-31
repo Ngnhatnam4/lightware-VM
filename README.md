@@ -4,7 +4,7 @@ Lightware-VM is a cutting-edge virtual machine emulator system designed to suppo
 Now is currently in WIP so stay tuned
 
 ## How does lightware include
-Lightware include so many feature
+>Lightware include so many feature
 - Multi-backend virtualization support: QEMU, VirtualBox, VMware, Parallels  
 - Custom virtual disk file format (`.vdi2x`) supporting 200MB to 1GB sizes  
 - Support for up to 100 virtual CPUs (Intel, AMD, ARM architectures)  
@@ -21,10 +21,13 @@ Lightware include so many feature
 ### How to install it?
   -well just wait for while
 
-  or how to use it in powershell?
-  -use the PowerShell to create and manage VMs
+  >or how to use it in powershell?
   
-  [.\launch-lightware.ps1]
+  -use the PowerShell to create and manage VMs
+  ```
+  .\launch-lightware.ps1
+
+  ```
 #### Contributing
   Contributions are welcome! Please follow these steps:
 
@@ -54,16 +57,19 @@ Lightware include so many feature
  
 ##### Usage Examples
 Creating a New VM
+ ```
+.\launch-lightware.ps1 -CreateVM -Name "MyVM" -CPUCount 4 -MemoryGB 8 -DiskSizeGB 20
 
-[.\launch-lightware.ps1 -CreateVM -Name "MyVM" -CPUCount 4 -MemoryGB 8 -DiskSizeGB 20]
-
+ ```
 Importing an Existing VM
-
-[.\launch-lightware.ps1 -ImportVM -Path "C:\VMs\MyImportedVM.vdi2x"]
-
+ ```
+.\launch-lightware.ps1 -ImportVM -Path "C:\VMs\MyImportedVM.vdi2x"
+ ```
 Listing VMs
+ ```
+.\launch-lightware.ps1 -ListVMs
 
-[.\launch-lightware.ps1 -ListVMs]
+ ```
  (Note: Detailed commands and options will be expanded as the project matures.)           
 ###### About Project License 
 - This project is licensed under the MIT License. See the LICENSE file for details.
